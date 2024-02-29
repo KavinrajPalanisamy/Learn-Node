@@ -1,0 +1,19 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "Learn Node for Kalima",
+  "main": "kalima.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KavinrajPalanisamy/Learn-Node.git"
+  },
+  "author": "Kalima, Kavin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KavinrajPalanisamy/Learn-Node/issues"
+  },
+  "homepage": "https://github.com/KavinrajPalanisamy/Learn-Node#readme"
+}
