@@ -23,4 +23,7 @@ Z:third digit is patch version
 ^4.18.1 -> change the minor or patch version. but update will never change the major version.
 ~4.18.1 -> change only the patch version
 
+2024-10-21 3.20pm
+Error Handling
+
 */
