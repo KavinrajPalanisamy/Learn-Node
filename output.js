@@ -12,7 +12,7 @@ console.log(x,y);
 console.log("I am %s with age %d born in %i and my details %o" ,"priya",28,1996,{address:"cuddalore"});
 
 // to clear the console
-console.clear();
+// console.clear();
 
 // to count the console
 

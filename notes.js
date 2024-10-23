@@ -5,16 +5,20 @@ link - https://www.youtube.com/watch?v=5rc7gkc2Chs&list=PLTP3E5bPW796_icZanMqhdg
 
 
 Getting Started with Node and Command line
-
+V-1
 1. Introduction to nodeJs
 2. NodeJs Installation
 3. Create nodejs Project
 4. Run nodejs Scrips
-5. Exit node from program
-6. Environment variable
-7. REPL
-8. NodeJs Command line arguments
-  - process.argv
+5. Exit node from program -> app.js
+6. Environment variable -> env.js
+// using cmd arg
+  NAME=PRIYA PROFESSION=SE node env.js
+// without using dotenv package import
+  node -r dotenv/config env.js 
+7. REPL -> repl.js
+8. NodeJs Command line arguments =>>>>> arguments.js
+  - process.argv 
   //process.argv; contains 3 arguments
   // 1. path of node
   // 2. file name to execute
@@ -22,13 +26,14 @@ Getting Started with Node and Command line
   // console.log(process.argv);
   //  node argument.js name=priya
   // to use the name
+  
   console.log(process.argv.slice(2)[0]);
 
   - handling the arguments using minimist
   // to access only the name from the argument we have a another package called minimist
   // when we use minimist then we need to add -- in the commandline
   //  node argument.js --name=priya
-9. Command line Output
+9. Command line Output -> output.js
   - format specifier in console
     %s - String
     %d - Number
@@ -39,10 +44,12 @@ Getting Started with Node and Command line
   - Handling stack trace
   - measure the time using console(console.time,console.timeEnd())
   - progress bar(by npm progress package)
-10. Command line Input
+10. Command line Input -> input.js
   - command line interface
   - prompt in node
 
+  
+V-2
 Node Package Manager
 
 "optionalDependencies": { 
@@ -70,14 +77,15 @@ Z:third digit is patch version
 ~4.18.1 -> change only the patch version
 
 2024-10-21 3.20pm
-Error Handling
+V-3
+Error Handling -> error.js
 - Error Handling using objects
 - Custom Error Handling
 - Error handling using try/catch
 - Handling Uncaught Exceptions
 - Handling Errors with Promise
 - Handling Errors using async/await
-File Handling
+File Handling -> fileHandling.js
 - About fs and path module, path joining(extracting __dirname, basename/filename, file extension)
 - Read a file using callback(async version)
 - Read a file synchronously
@@ -93,6 +101,17 @@ File Handling
 - Rename a file
 
 2024-10-22 10.00 AM
-Async Programming
+V-4
+Async Programming -> async.js
+
+V-5
+Build RESTFUL API using Vanilla Node js(Without using any library or framework) -> server.js
+
+
+V-6 Express
+-> refer user-application
+to create a project skeleton we use npx express-generator <app-name>
+
+to run DEBUG=user-application:* npm start
 
 */
