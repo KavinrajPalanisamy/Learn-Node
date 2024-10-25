@@ -13,11 +13,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-app.use(logger('dev'));
-app.use(express.json());
+app.use(logger('dev')); // morgan logger
+app.use(express.json()); // to read the conntent from req.body
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'))); // to serve a static file to client
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

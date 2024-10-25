@@ -104,14 +104,50 @@ File Handling -> fileHandling.js
 V-4
 Async Programming -> async.js
 
-V-5
+V-5 -> server.js file
 Build RESTFUL API using Vanilla Node js(Without using any library or framework) -> server.js
 
 
 V-6 Express
 -> refer user-application
-to create a project skeleton we use npx express-generator <app-name>
+express setup, exposing end points  => index.js
+to create a project skeleton we use npx express-generator <app-name>(user-application)
 
 to run DEBUG=user-application:* npm start
+how to serve a static file to client using express-> user-application->app.js
+  -> accessing/redirecting a server file to client
+Morgan logging package -> user-application->app.js
+  -> check morgan documentation for various options
 
+V-7 Middleware -> middleware.js
+- application level
+- router level
+- error handler middleware
+- Built in middleware
+- Third party middleware 
+    morgan (logger)
+    multer(file uploading)
+  --Refer package for more details
+
+V-8 -> contacts.js
+REST API with Mongo(contact management) more like a handson
+Project setup
+API exposing for CRUD
+create controller logic for CRUD
+Multiple http methods on single route
+Built in middleware for post request body
+Throw error - express
+
+V9
+REST API CRUD operations using mongo (cont.. of v8)
+Error handling in middleware
+express async handler
+mongodb Setup
+connect express app to mongodb
+define mongoose schema for contacts collection
+Get all contacts
+Create contacts
+Get contacts by Id
+update contact by id
+delete contact by id
 */
