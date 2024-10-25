@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/middleware.js",
+            "program": "${workspaceFolder}/contacts.js",
             "request": "launch",
             "skipFiles": [
                 "<node_internals>/**"
